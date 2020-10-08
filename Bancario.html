@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Bancario</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- CRIAÇÃO DE LINHAS E COLUNAS COM O BOOTSTRAP-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>
+                    CRUD BANCARIO
+                    <!--small é padronizado do bootstrap para inserir um subtitulo-->
+                    <small class="text-muted">Sistema Bancario</small>
+                </h2>
+            </div>
+        </div>
+        <div class="row">
+            <!-- NOVA LINHA PARA O BOTÃO NOVO CLIENTE. -->
+            <div class="col-md-12">
+                <!--NOVA COLUNA DE 12 PONTOS-->
+                <button type="button" class="btn-primary float-left ">Novo cliente</button>
+            </div>
+        </div>
+        <div class="row" style="margin-top:30px">
+            <div class="col-md-12">
+                <table class="table table-hover table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col"> Conta</th>
+                            <th scope="col">Agencia</th>
+                            <th scope="col">Cheque Es liberado</th>
+                            <th scope="col">Saldo</th>
+                            <th scope="col">Cheque Es</th>
+                            <th scope="col">Taxa</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Gabrielly Correia Pereira</td>
+                            <td>636497</td>
+                            <td>1135</td>
+                            <td>0</td>
+                            <td>13.425,58</td>
+                            <td>0</td>
+                            <td>2,99</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>jessica Sales Reeleito</td>
+                            <td>913986</td>
+                            <td>1135</td>
+                            <td>0</td>
+                            <td>51,92</td>
+                            <td>0</td>
+                            <td>2,99</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <<td>Isnaldo Bulhoes</td>
+                            <td>366936</td>
+                            <td>1158</td>
+                            <td>1</td>
+                            <td>48,18</td>
+                            <td>2.000,00</td>
+                            <td>3,56</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <<td>Flaviano Melo Reeleito</td>
+                            <td>355886</td>
+                            <td>1135</td>
+                            <td>0</td>
+                            <td>9.186,15</td>
+                            <td>0</td>
+                            <td>2,99</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <<td>Sergio Toledo</td>
+                            <td>861297</td>
+                            <td>1158</td>
+                            <td>1</td>
+                            <td>156,92</td>
+                            <td>0</td>
+                            <td>2,99</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <<td>Severino pessoa</td>
+                            <td>529569</td>
+                            <td>1299</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>5.000,00</td>
+                            <td>2,99</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <<td>Tereza Nelma</td>
+                            <td>553798</td>
+                            <td>1135</td>
+                            <td>1</td>
+                            <td>185.299,84</td>
+                            <td>0</td>
+                            <td>2,4</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">8</th>
+                            <<td>Perpetua Almeida</td>
+                            <td>840940</td>
+                            <td>1136</td>
+                            <td>1</td>
+                            <td>956,98</td>
+                            <td>75,74</td>
+                            <td>2,99</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">9</th>
+                            <<td>Nivaldo Albuquerque</td>
+                            <td>400590</td>
+                            <td>1136</td>
+                            <td>1</td>
+                            <td>7.188,22</td>
+                            <td>3.262,86</td>
+                            <td>2,4</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10</th>
+                            <<td>Leda Sadala</td>
+                            <td>374740</td>
+                            <td>1136</td>
+                            <td>1</td>
+                            <td>6,30</td>
+                            <td>954,00</td>
+                            <td>3,56</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">11</th>
+                            <<td>Aline Gurgel</td>
+                            <td>339124</td>
+                            <td>1135</td>
+                            <td>1</td>
+                            <td>78.599,10</td>
+                            <td>0</td>
+                            <td>2,99</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">12</th>
+                            <<td>Jesus Sergio</td>
+                            <td>113784</td>
+                            <td>1158</td>
+                            <td>1</td>
+                            <td>44,73</td>
+                            <td>200,00</td>
+                            <td>3,56</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">13</th>
+                            <<td>Camila Capiberibe</td>
+                            <td>109163</td>
+                            <td>1299</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>2,99</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">14</th>
+                            <<td>Luiz Carlos</td>
+                            <td>166831</td>
+                            <td>1299</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>2,99</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">15</th>
+                            <<td>Marcelo Ramos</td>
+                            <td>241442</td>
+                            <td>1136</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>2,99</td>
+                        </tr>
+                       
+                        <tr>
+                            <th scope="row">16</th>
+                            <<td>Manuel Marcos</td>
+                            <td>847499</td>
+                            <td>1136</td>
+                            <td>0</td>
+                            <td>1,89</td>
+                            <td>0</td>
+                            <td>2,99</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">17</th>
+                            <<td>Cibelly Torres</td>
+                            <td>262241</td>
+                            <td>1135</td>
+                            <td>0</td>
+                            <td>831,84</td>
+                            <td>0</td>
+                            <td>2,99</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">18</th>
+                            <<td>Alexandra Souza</td>
+                            <td>194470</td>
+                            <td>1135</td>
+                            <td>0</td>
+                            <td>463,52</td>
+                            <td>0</td>
+                            <td>2,99</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">19</th>
+                            <<td>Michele Pereira da Silva</td>
+                            <td>356320</td>
+                            <td>1135</td>
+                            <td>1</td>
+                            <td>500,86</td>
+                            <td>0</td>
+                            <td>2,99</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">20</th>
+                            <<td>Mara Rocha</td>
+                            <td>970381</td>
+                            <td>1136</td>
+                            <td>0</td>
+                            <td>46,00</td>
+                            <td>0</td>
+                            <td>2,99</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">21</th>
+                            <<td>Hannah Borges</td>
+                            <td>815669</td>
+                            <td>1158</td>
+                            <td>1</td>
+                            <td>940,93</td>
+                            <td>15,95</td>
+                            <td>2,99</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">21</th>
+                            <<td>Karina Zutter</td>
+                            <td>855045</td>
+                            <td>1136</td>
+                            <td>0</td>
+                            <td>2.690,45</td>
+                            <td>0</td>
+                            <td>2,99</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">22</th>
+                            <<td>Abadal mahmed</td>
+                            <td>632053</td>
+                            <td>1158</td>
+                            <td>1</td>
+                            <td>3.596,64</td>
+                            <td>2.500,00</td>
+                            <td>2,99</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">23</th>
+                            <<td>Vanda Milani</td>
+                            <td>449302</td>
+                            <td>1136</td>
+                            <td>1</td>
+                            <td>5.547,31</td>
+                            <td>2.500,00</td>
+                            <td>2,99</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">24</th>
+                            <<td>Cleiton Schiodinni</td>
+                            <td>670283</td>
+                            <td>1136</td>
+                            <td>1</td>
+                            <td>9.313,84</td>
+                            <td>0</td>
+                            <td>2,99</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">25</th>
+                            <<td>Marcele Rodrigues</td>
+                            <td>558685</td>
+                            <td>1135</td>
+                            <td>0</td>
+                            <td>3,95</td>
+                            <td>0</td>
+                            <td>2,99</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">26</th>
+                            <<td>Felipi Koller</td>
+                            <td>724264</td>
+                            <td>1299</td>
+                            <td>0</td>
+                            <td>1.315,67</td>
+                            <td>0</td>
+                            <td>2,99</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">27</th>
+                            <<td>Alan Rick</td>
+                            <td>559925</td>
+                            <td>1299</td>
+                            <td>0</td>
+                            <td>3.880,98</td>
+                            <td>0</td>
+                            <td>2,99</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">23</th>
+                            <<td>Brian Lohn</td>
+                            <td>933502</td>
+                            <td>1299</td>
+                            <td>0</td>
+                            <td>2.612,98</td>
+                            <td>0</td>
+                            <td>2,99</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!--SCRIPTS PARA RECONHECER O JAVASCRIPT-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+    <script src="bancario.js"></script>
+</body>
+
+</html>

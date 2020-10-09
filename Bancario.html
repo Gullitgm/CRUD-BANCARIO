@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crud Bancario</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    
 </head>
 
 <body>
@@ -27,12 +27,13 @@
             <!-- NOVA LINHA PARA O BOTÃO NOVO CLIENTE. -->
             <div class="col-md-12">
                 <!--NOVA COLUNA DE 12 PONTOS-->
-                <button type="button" class="btn-primary float-left ">Novo cliente</button>
+                <button type="button" class="btn-primary float-right " data-toggle="modal"
+                    data-target="#modalregistro">Novo cliente</button>
             </div>
         </div>
         <div class="row" style="margin-top:30px">
             <div class="col-md-12">
-                <table class="table table-hover table-dark">
+                <table id="tblcontas" class="table table-hover">
                     <thead>
                         <tr>
                             <th scope="col">#</th>
@@ -43,6 +44,8 @@
                             <th scope="col">Saldo</th>
                             <th scope="col">Cheque Es</th>
                             <th scope="col">Taxa</th>
+                            <th scope="col" style="width: 50px;"> </th>
+                            <th scope="col" style="width: 50px;"> </th>
                         </tr>
                     </thead>
                     <tbody>
@@ -56,18 +59,7 @@
                             <td>0</td>
                             <td>2,99</td>
                         </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>jessica Sales Reeleito</td>
-                            <td>913986</td>
-                            <td>1135</td>
-                            <td>0</td>
-                            <td>51,92</td>
-                            <td>0</td>
-                            <td>2,99</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
+                        <th scope="row">3</th>
                             <<td>Isnaldo Bulhoes</td>
                             <td>366936</td>
                             <td>1158</td>
@@ -137,213 +129,84 @@
                             <td>2,4</td>
                         </tr>
                         <tr>
-                            <th scope="row">10</th>
-                            <<td>Leda Sadala</td>
-                            <td>374740</td>
-                            <td>1136</td>
-                            <td>1</td>
-                            <td>6,30</td>
-                            <td>954,00</td>
-                            <td>3,56</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">11</th>
-                            <<td>Aline Gurgel</td>
-                            <td>339124</td>
-                            <td>1135</td>
-                            <td>1</td>
-                            <td>78.599,10</td>
-                            <td>0</td>
-                            <td>2,99</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">12</th>
-                            <<td>Jesus Sergio</td>
-                            <td>113784</td>
-                            <td>1158</td>
-                            <td>1</td>
-                            <td>44,73</td>
-                            <td>200,00</td>
-                            <td>3,56</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">13</th>
-                            <<td>Camila Capiberibe</td>
-                            <td>109163</td>
-                            <td>1299</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>2,99</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">14</th>
-                            <<td>Luiz Carlos</td>
-                            <td>166831</td>
-                            <td>1299</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>2,99</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">15</th>
-                            <<td>Marcelo Ramos</td>
-                            <td>241442</td>
-                            <td>1136</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>2,99</td>
-                        </tr>
-                       
-                        <tr>
-                            <th scope="row">16</th>
-                            <<td>Manuel Marcos</td>
-                            <td>847499</td>
-                            <td>1136</td>
-                            <td>0</td>
-                            <td>1,89</td>
-                            <td>0</td>
-                            <td>2,99</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">17</th>
-                            <<td>Cibelly Torres</td>
-                            <td>262241</td>
-                            <td>1135</td>
-                            <td>0</td>
-                            <td>831,84</td>
-                            <td>0</td>
-                            <td>2,99</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">18</th>
-                            <<td>Alexandra Souza</td>
-                            <td>194470</td>
-                            <td>1135</td>
-                            <td>0</td>
-                            <td>463,52</td>
-                            <td>0</td>
-                            <td>2,99</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">19</th>
-                            <<td>Michele Pereira da Silva</td>
-                            <td>356320</td>
-                            <td>1135</td>
-                            <td>1</td>
-                            <td>500,86</td>
-                            <td>0</td>
-                            <td>2,99</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">20</th>
-                            <<td>Mara Rocha</td>
-                            <td>970381</td>
-                            <td>1136</td>
-                            <td>0</td>
-                            <td>46,00</td>
-                            <td>0</td>
-                            <td>2,99</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">21</th>
-                            <<td>Hannah Borges</td>
-                            <td>815669</td>
-                            <td>1158</td>
-                            <td>1</td>
-                            <td>940,93</td>
-                            <td>15,95</td>
-                            <td>2,99</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">21</th>
-                            <<td>Karina Zutter</td>
-                            <td>855045</td>
-                            <td>1136</td>
-                            <td>0</td>
-                            <td>2.690,45</td>
-                            <td>0</td>
-                            <td>2,99</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">22</th>
-                            <<td>Abadal mahmed</td>
-                            <td>632053</td>
-                            <td>1158</td>
-                            <td>1</td>
-                            <td>3.596,64</td>
-                            <td>2.500,00</td>
-                            <td>2,99</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">23</th>
-                            <<td>Vanda Milani</td>
-                            <td>449302</td>
-                            <td>1136</td>
-                            <td>1</td>
-                            <td>5.547,31</td>
-                            <td>2.500,00</td>
-                            <td>2,99</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">24</th>
-                            <<td>Cleiton Schiodinni</td>
-                            <td>670283</td>
-                            <td>1136</td>
-                            <td>1</td>
-                            <td>9.313,84</td>
-                            <td>0</td>
-                            <td>2,99</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">25</th>
-                            <<td>Marcele Rodrigues</td>
-                            <td>558685</td>
-                            <td>1135</td>
-                            <td>0</td>
-                            <td>3,95</td>
-                            <td>0</td>
-                            <td>2,99</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">26</th>
-                            <<td>Felipi Koller</td>
-                            <td>724264</td>
-                            <td>1299</td>
-                            <td>0</td>
-                            <td>1.315,67</td>
-                            <td>0</td>
-                            <td>2,99</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">27</th>
-                            <<td>Alan Rick</td>
-                            <td>559925</td>
-                            <td>1299</td>
-                            <td>0</td>
-                            <td>3.880,98</td>
-                            <td>0</td>
-                            <td>2,99</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">23</th>
-                            <<td>Brian Lohn</td>
-                            <td>933502</td>
-                            <td>1299</td>
-                            <td>0</td>
-                            <td>2.612,98</td>
-                            <td>0</td>
-                            <td>2,99</td>
-                        </tr>
+
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
 
-
+    <!-- Modal -->
+    <div class="modal fade" id="modalregistro" tabindex="-1" aria-labelledby="ModalregistroLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalregistroLabel">Registrar</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <input id="hdid" type="hidden" / >
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="">Nome</label>
+                                <input id="txtnome" type="text" class="form-control" placeholder="digite o nome..." />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="">Conta</label>
+                                <input id="txtconta" type="text" class="form-control" placeholder="digite a conta..." />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="">Agencia</label>
+                                <input id="txtagencia" type="text" class="form-control" placeholder="digite a agencia..." />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="">Cheque Liberado</label>
+                                <input id="txtchequeesliberado" type="text" class="form-control" placeholder="digite 0 ou 1 ..." />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="">Saldo</label>
+                                <input id="txtsaldo" type="text" class="form-control" placeholder="digite o saldo..." />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="">Cheque Especial</label>
+                                <input id="txtchequees" type="text" class="form-control"
+                                    placeholder="digite o valor do cheque..." />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="">Taxa</label>
+                                <input id="txttaxa" type="text" class="form-control" placeholder="digite a taxa..." />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button id="btnsalvar" type="button" class="btn btn-primary">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
